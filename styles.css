@@ -28,20 +28,23 @@ header {
   border-radius: 50%;
   border: solid 10px white;
   position: absolute;
-  top: 50%;
+  top: 55%;
   transform: translateY(-200px);
+  z-index: 2;
 }
 .header-info {
   background: white;
   color: black;
   width: 80vw;
   height: 50vh;
-  border-radius: 10px 10px 0 0;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   padding: 50px 200px;
+  position: absolute;
+  bottom: -25px;
 }
 .header-info a {
   color: #a7b150;
@@ -55,11 +58,10 @@ header nav {
   position: fixed;
   top: 0;
   padding: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  width: 50%;
+  width: 100%;
+  z-index: 50;
+  background: #333;
+  transition: top 200ms linear;
 }
 header nav a {
   color: white;
@@ -67,9 +69,24 @@ header nav a {
   font-size: 1.3rem;
   transition: all 0.25s ease-in-out;
 }
+header nav .links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  margin: 0 auto;
+}
 nav a:hover {
   color: #a7b150;
 }
+.hidden {
+  display: none;
+}
+.display {
+  display: block;
+}
+
 .tagline {
   font-size: 1.2rem;
   font-weight: 200;
