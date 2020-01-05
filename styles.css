@@ -144,4 +144,23 @@ nav a:hover {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ghost-photo p {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  align-items: center;
+  transition: all 200ms ease-in-out;
+  padding: 40px;
+  opacity: 0;
+  line-height: 25px;
+  user-select: none;
+}
+.ghost-photo:hover p {
+  opacity: 1;
 }
