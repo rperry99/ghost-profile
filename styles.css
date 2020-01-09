@@ -29,15 +29,15 @@ header {
   height: 250px;
   width: 250px;
   border-radius: 50%;
-  border: solid 10px gray;
+  border: solid 10px #ddd;
   position: absolute;
   top: 55%;
   transform: translateY(-200px);
   z-index: 2;
 }
 .header-info {
-  background: gray;
-  color: white;
+  background: #ddd;
+  color: black;
   width: 80vw;
   height: 50vh;
   border-radius: 10px;
@@ -49,6 +49,9 @@ header {
   position: absolute;
   bottom: -25px;
   text-align: left;
+}
+.header-info .tagline {
+  color: rgba(0, 0, 0, 0.6);
 }
 .header-info a,
 footer a {
@@ -68,6 +71,7 @@ header nav {
   z-index: 50;
   background: #333;
   transition: top 200ms linear;
+  border-bottom: 3px white outset;
 }
 header nav a {
   color: white;
@@ -93,7 +97,6 @@ nav a:hover {
   stroke: white;
   right: 40px;
   top: 40px;
-  transform: rotate(10deg);
 }
 
 .tagline {
@@ -119,6 +122,23 @@ section h2 {
   writing-mode: vertical-rl;
   text-orientation: upright;
 }
+section:nth-child(odd) {
+  background: rgb(58, 58, 58);
+}
+#evidence {
+  position: relative;
+}
+#evidence::after {
+  content: "";
+  height: 100px;
+  width: 100%;
+  background: #333;
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  border-radius: 50%;
+  z-index: 1;
+}
 #evidence .tagline {
   margin: 20px;
 }
@@ -132,6 +152,7 @@ section h2 {
     "ghost4 ghost5 ghost5"
     "ghost6 ghost5 ghost5";
   grid-gap: 5px;
+  z-index: 2;
 }
 .ghost1 {
   background: url("https://images.unsplash.com/photo-1489179070830-36477bd83c93?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80");
@@ -182,11 +203,22 @@ section h2 {
 .ghost-photo:hover p {
   opacity: 1;
 }
+
 #places {
   height: 100vh;
   width: 100%;
-  background: none;
-  overflow-x: hidden;
+  position: relative;
+}
+#places::after {
+  content: "";
+  height: 100px;
+  width: 100%;
+  background: rgb(58, 58, 58);
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  border-radius: 50%;
+  z-index: 1;
 }
 #places h2 {
   position: absolute;
@@ -214,16 +246,5 @@ footer {
   justify-content: center;
   position: absolute;
   bottom: 0;
-}
-
-@media screen and (max-width: 1024px) {
-  .accent {
-    width: 2000px;
-    height: 150px;
-    transform: rotate(-30deg) translateY(-250px);
-  }
-  section {
-    margin-bottom: 50px;
-    height: 100vh;
-  }
+  z-index: 50;
 }
