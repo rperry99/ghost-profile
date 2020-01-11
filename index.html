@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Brandon Pontoha - Ghost Hunter</title>
+    <script src="https://use.fontawesome.com/ae1e227e88.js"></script>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -14,7 +15,7 @@
           <a href="#evidence" class="evidence">Evidence</a>
           <a href="#places" class="past">Past Locations</a>
           <a href="#" class="testimonials">Testimonials</a>
-          <a href="#" class="contact">Contact</a>
+          <a href="#contact" class="contact">Contact</a>
         </div>
       </nav>
       <div class="profile-picture"></div>
@@ -31,7 +32,7 @@
           down to the <a href="#">Contact Me</a> section and shooting me a
           message!
         </p>
-        <img src="img/phantom.png" alt="Ghost" class="ghost-icon" />
+        <i class="fa fa-camera-retro " aria-hidden="true"></i>
       </div>
     </header>
     <section id="evidence">
@@ -115,6 +116,35 @@
         </div>
       </div>
     </section>
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p class="tagline">
+        If you would like to get into contact with me, you can reach out via
+        <a href="https://www.twitter.com" target="_blank" class="twitter"
+          >Twitter</a
+        >, or you can fill out the form below.
+      </p>
+      <form>
+        <div class="name">
+          <div class="first-name">
+            <label for="first">First Name:</label>
+            <input type="text" id="first" />
+          </div>
+          <div class="last-name">
+            <label for="last">Last Name:</label>
+            <input type="text" id="last" />
+          </div>
+        </div>
+        <div class="email-div">
+          <label for="email">Email:</label> <input type="email" id="email" />
+        </div>
+        <div>
+          <label for="message">Message:</label>
+          <textarea id="message"></textarea>
+        </div>
+        <button id="submit">Submit</button>
+      </form>
+    </section>
     <footer>
       <div>
         Icons made by
@@ -127,6 +157,7 @@
         >
       </div>
     </footer>
+
     <script src="app.js"></script>
   </body>
 </html>

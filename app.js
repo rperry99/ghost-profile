@@ -1,3 +1,4 @@
+// Nav Bar Collapsing while Scrolling
 var prevScrollPos = window.pageYOffset;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
@@ -8,3 +9,8 @@ window.onscroll = function() {
   }
   this.prevScrollPos = currentScrollPos;
 };
+
+// Remove functionality of submit button.
+document.getElementById("submit").addEventListener("click", event => {
+  event.preventDefault();
+});
