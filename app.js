@@ -5,7 +5,11 @@ window.onscroll = function() {
   if (this.prevScrollPos > currentScrollPos) {
     this.document.getElementById("navbar").style.top = "0";
   } else {
-    this.document.getElementById("navbar").style.top = "-70px";
+    if (window.innerWidth > 426) {
+      this.document.getElementById("navbar").style.top = "-70px";
+    } else {
+      this.document.getElementById("navbar").style.top = "-160px";
+    }
   }
   this.prevScrollPos = currentScrollPos;
 };

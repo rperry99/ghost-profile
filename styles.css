@@ -75,7 +75,7 @@ header {
 header nav {
   position: fixed;
   top: 0;
-  padding: 20px;
+  padding: 10px;
   width: 100%;
   z-index: 50;
   background: #333;
@@ -124,7 +124,6 @@ nav a:hover {
 }
 
 section {
-  /* height: 100vh; */
   height: max-content;
   width: 100%;
   padding: 50px 0;
@@ -289,6 +288,7 @@ form .name {
   border-radius: 5px;
   outline: none;
   transition: border-color 200ms ease-in-out;
+  padding: 2px 10px;
 }
 #first:focus,
 #last:focus,
@@ -356,5 +356,173 @@ footer a:hover {
   }
   .fa-camera-retro {
     font-size: 8rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  header nav .links {
+    width: 90%;
+  }
+  header .header-info {
+    padding: 50px 100px;
+    height: 70vh;
+  }
+  header .header-info p {
+    line-height: 1.5rem;
+  }
+  .profile-picture {
+    transform: translateY(-225px);
+  }
+  .fa-camera-retro {
+    font-size: 6rem;
+  }
+  .photos {
+    height: 70%;
+  }
+  .ghost-photo {
+    height: 150px;
+    width: 250px;
+    margin: 5px 0;
+  }
+  #places .place-cards .card {
+    width: 70%;
+    transform: translateX(-50px);
+  }
+  #places h2 {
+    height: 50%;
+    writing-mode: vertical-lr;
+    width: max-content;
+    left: 85%;
+  }
+  #testimonials .testimonies .card {
+    width: 70%;
+    height: max-content;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .profile-picture {
+    height: 150px;
+    width: 150px;
+    border-width: 5px;
+  }
+  section h2,
+  #places h2,
+  #contact h2 {
+    position: static;
+    text-orientation: unset;
+    writing-mode: unset;
+    letter-spacing: 3px;
+  }
+  #places h2,
+  #contact h2,
+  #testimonials h2 {
+    margin-bottom: 20px;
+  }
+  .photos {
+    width: 80%;
+    justify-content: space-evenly;
+  }
+  #places .place-cards {
+    height: max-content;
+  }
+  #places .place-cards .card {
+    transform: translate(0);
+    margin: 0;
+    width: 80%;
+    margin: 25px auto;
+    height: max-content;
+  }
+  #places .place-cards .card img {
+    height: 100px;
+    width: 150px;
+    border-width: 2px;
+    margin-right: 20px;
+  }
+  #places .place-cards .card .description {
+    width: 80%;
+  }
+  .card2 {
+    border-top: solid 2px #a7b150;
+    padding-top: 25px;
+  }
+  .card2 .description {
+    order: 2;
+  }
+  #places p {
+    width: 80%;
+  }
+  #testimonials .testimonies .card {
+    width: 80%;
+  }
+  #contact .tagline {
+    width: 80%;
+    line-height: 1.9rem;
+  }
+  #contact form {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  #navbar .links {
+    flex-direction: column;
+  }
+  #navbar .links a:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  header {
+    height: max-content;
+  }
+  .header-info {
+    height: max-content;
+    padding: 500;
+    position: static;
+    margin-top: 250px;
+  }
+  .fa-camera-retro {
+    display: none;
+  }
+  #places .place-cards .card {
+    flex-direction: column;
+  }
+  #places .place-cards .card img {
+    margin-bottom: 15px;
+  }
+  #testimonials .testimonies .card {
+    flex-direction: column;
+    width: 90%;
+    padding: 15px;
+  }
+  #testimonials .testimonies .card .profile {
+    margin-bottom: 15px;
+  }
+  #testimonials .testimonies .card div {
+    width: 100%;
+  }
+  #testimonials .testimonies .card .handle {
+    margin-top: 15px;
+  }
+  footer {
+    flex-direction: column;
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .tagline {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  section h2 {
+    font-size: 1.5rem;
+  }
+  #testimonials .testimonies .card {
+    width: 95%;
+  }
+  footer {
+    text-align: center;
   }
 }
