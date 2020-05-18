@@ -44,7 +44,7 @@ header {
   color: black;
   width: 80vw;
   height: 50vh;
-  border-radius: 10px;
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -215,7 +215,7 @@ section:nth-child(odd) {
 }
 #places .place-cards .card img {
   height: 100%;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .description {
   width: 50%;
@@ -242,7 +242,7 @@ section:nth-child(odd) {
   width: 40%;
   height: 225px;
   margin: 10px;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 #testimonials .testimonies .card div {
   width: 75%;
@@ -320,7 +320,7 @@ form button {
   margin-top: 30px;
   width: 150px;
   height: 50px;
-  border-radius: 10px;
+  border-radius: 5px;
   color: white;
   background: #a7b150;
   border: none;
