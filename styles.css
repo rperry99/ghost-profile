@@ -148,9 +148,6 @@ section h2 {
   text-orientation: upright;
   color: #a7b150;
 }
-section#contact h2 {
-  margin-top: 2rem;
-}
 section:nth-child(odd) {
   background: rgb(58, 58, 58);
 }
@@ -343,7 +340,7 @@ form button:active {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 1rem;
+  margin: 2rem;
 }
 .socials a i {
   color: white;
@@ -352,6 +349,9 @@ form button:active {
 .socials a:hover i {
   cursor: pointer;
   color: rgb(173, 202, 79);
+}
+section#contact h2 {
+  margin-bottom: 2rem;
 }
 
 footer {
