@@ -472,13 +472,6 @@ footer a:hover {
   #places .place-cards .card .description {
     width: 80%;
   }
-  .card2 {
-    border-top: solid 2px #a7b150;
-    padding-top: 25px;
-  }
-  .card2 .description {
-    order: 2;
-  }
   #places p {
     width: 80%;
   }
