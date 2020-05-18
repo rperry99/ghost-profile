@@ -214,7 +214,7 @@ section:nth-child(odd) {
   margin: 50px auto;
 }
 #places .place-cards .card img {
-  height: 100%;
+  width: 30%;
   border-radius: 5px;
 }
 .description {
