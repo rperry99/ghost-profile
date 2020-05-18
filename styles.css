@@ -551,6 +551,13 @@ footer a:hover {
   }
 }
 
+@media screen and (max-width: 426px) {
+  .header-info {
+    padding: 15px;
+    width: 80%;
+  }
+}
+
 @media screen and (max-width: 375px) {
   .headline {
     font-size: 1.4rem;
