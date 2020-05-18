@@ -217,7 +217,6 @@ section:nth-child(odd) {
 #places .place-cards .card img {
   height: 100%;
   border-radius: 10px;
-  border: solid 5px #a7b150;
 }
 .description {
   width: 50%;
@@ -236,7 +235,6 @@ section:nth-child(odd) {
   flex-wrap: wrap;
 }
 #testimonials .testimonies .card {
-  border: solid 5px white;
   display: flex;
   justify-content: space-between;
   align-items: center;
