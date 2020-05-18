@@ -325,17 +325,15 @@ form button {
   background: #a7b150;
   border: none;
   outline: none;
-  filter: drop-shadow(3px 3px 3px black);
   transition: all 200ms ease-in-out;
+  font-size: 1.2rem;
 }
 form button:hover {
-  filter: drop-shadow(2px 2px 2px black);
-  transform: translateY(2px);
   cursor: pointer;
+  background: rgb(173, 202, 79);
 }
 form button:active {
-  filter: drop-shadow(1px 1px 1px black);
-  transform: translateY(4px);
+  background: rgb(173, 202, 79);
 }
 footer {
   width: 100%;
